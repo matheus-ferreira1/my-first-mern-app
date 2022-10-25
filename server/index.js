@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 mongoose.connect(
-  `mongodb+srv://user123:${process.env.MONGODB_PASSWORD}@mycrud.kl25zab.mongodb.net/firstMernApp?retryWrites=true&w=majority`
+  `mongodb+srv://DBowner123:${process.env.MONGODB_PASSWORD}@cluster0.pdkigo8.mongodb.net/mernFirst?retryWrites=true&w=majority`
 );
 
 app.get("/getUsers", (req, res) => {
